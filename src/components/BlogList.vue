@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h2>Blog</h2>
-    <p class="muted">Neuigkeiten aus dem Botépée-Projekt.</p>
+    <h2>{{ tt("blog.h2") }}</h2>
+    <p class="muted">{{ tt("blog.subtitle") }}</p>
 
     <article v-for="p in posts" :key="p.slug" class="card">
       <h3>
@@ -11,17 +11,14 @@
       <p>{{ p.excerpt }}</p>
     </article>
 
-    <p v-if="!posts.length" class="muted">Noch keine Beiträge vorhanden.</p>
+    <p v-if="!posts.length" class="muted">{{ tt("blog.empty") }}</p>
   </section>
 </template>
 
 <script setup>
 import { getAllPosts } from "../blog/data/data";
+import { useI18n } from "../composables/useI18n";
+import "../styles/blog-list.css";
 const posts = getAllPosts();
+const { tt } = useI18n();
 </script>
-
-<style scoped>
-.muted { color:#666; margin-top:-6px; }
-.card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:14px; margin:10px 0; }
-h3 { margin:6px 0 2px; }
-</style>

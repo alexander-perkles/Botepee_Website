@@ -1,0 +1,14 @@
+.muted { 
+  color: #666; 
+  margin-top: -6px; 
+}
+.card { 
+  background: #fff; 
+  border: 1px solid #e5e7eb; 
+  border-radius: 12px; 
+  padding: 14px; 
+  margin: 10px 0; 
+}
+h3 { 
+  margin: 6px 0 2px; 
+}

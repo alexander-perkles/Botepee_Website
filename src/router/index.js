@@ -5,8 +5,6 @@ import Kontakt from '../components/Kontakt.vue'
 import FAQ from '../components/FAQ.vue'
 import BlogList from '../components/BlogList.vue'
 import BlogPost from '../components/BlogPost.vue'
-import FeedbackAdmin from '../components/FeedbackAdmin.vue'
-import Feedback from '../components/Feedback.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -15,8 +13,6 @@ const routes = [
   { path: '/faq', component: FAQ },
   { path: '/blog', component: BlogList },
   { path: '/blog/:slug', component: BlogPost },
-  { path: '/admin/feedback', component: FeedbackAdmin },
-  { path: '/feedback', component: Feedback },
 ]
 
 const router = createRouter({

@@ -1,22 +1,23 @@
 <template>
   <section>
-    <h2>Projektidee</h2>
-    <p>
-      Botépée ist ein innovativer Fechttrainingsroboter, der speziell für realistische Übungsszenarien im Fechtsport entwickelt wird. Der Roboter ist mit einem beweglichen Arm und Bein ausgestattet, trägt echte Fechtausrüstung und kann über eine Fernbedienung gesteuert werden.
-    </p>
+    <h2>{{ tt("home.idea.h2") }}</h2>
+    <p>{{ tt("home.idea.p") }}</p>
 
-    <h2>Warum Botépée?</h2>
-    <p>
-      Im Fechtsport fehlen dynamische Trainingsgeräte. Bestehende Methoden (z. B. mit Polstern) erlauben keine realistische Bewegung. Botépée simuliert echte Fechtaktionen wie Angriffe, Paraden und Ausfälle.
-    </p>
+    <h2>{{ tt("home.why.h2") }}</h2>
+    <p>{{ tt("home.why.p") }}</p>
 
-    <h2>Ziele des Projekts</h2>
+    <h2>{{ tt("home.goals.h2") }}</h2>
     <ul>
-      <li>Entwicklung eines funktionsfähigen Fechtroboters</li>
-      <li>Steuerung über Mikrocontroller per Fernbedienung</li>
-      <li>Beweglicher Arm und Bein mit Servomotoren</li>
-      <li>Robuste Ausstattung mit echter Fechtausrüstung</li>
-      <li>Professioneller Webauftritt und Marketing</li>
+      <li>{{ tt("home.goals.li1") }}</li>
+      <li>{{ tt("home.goals.li2") }}</li>
+      <li>{{ tt("home.goals.li3") }}</li>
+      <li>{{ tt("home.goals.li4") }}</li>
+      <li>{{ tt("home.goals.li5") }}</li>
     </ul>
   </section>
 </template>
+
+<script setup>
+import { useI18n } from "../composables/useI18n";
+const { tt } = useI18n();
+</script>

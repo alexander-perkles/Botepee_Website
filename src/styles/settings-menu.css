@@ -1,0 +1,76 @@
+.settings {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+details {
+  position: relative;
+}
+summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform .1s ease;
+}
+summary:active { 
+  transform: scale(0.96); 
+}
+summary::-webkit-details-marker { 
+  display: none; 
+}
+
+.panel {
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  min-width: 200px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.panel-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.segmented button {
+  appearance: none;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease, transform .02s ease;
+}
+.segmented button:hover { 
+  background: #f3f4f6; 
+}
+.segmented button:active { 
+  transform: scale(0.98); 
+}
+.segmented button.active {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}

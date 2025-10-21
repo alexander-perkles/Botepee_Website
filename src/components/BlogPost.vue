@@ -5,14 +5,14 @@
     <div class="content" v-html="post.contentHtml"></div>
 
     <p class="back">
-      <router-link to="/blog">← Zurück zur Übersicht</router-link>
+      <router-link to="/blog">{{ tt("blog.back") }}</router-link>
     </p>
   </article>
 
   <section v-else class="post">
-    <h2>Beitrag nicht gefunden</h2>
-    <p>Der angeforderte Beitrag existiert nicht (Slug falsch oder Datei fehlt).</p>
-    <p class="back"><router-link to="/blog">← Zurück zur Übersicht</router-link></p>
+    <h2>{{ tt("faq.notfound.h2") }}</h2>
+    <p>{{ tt("faq.notfound.p") }}</p>
+    <p class="back"><router-link to="/blog">{{ tt("blog.back") }}</router-link></p>
   </section>
 </template>
 
@@ -20,7 +20,10 @@
 import { useRoute } from "vue-router";
 import { getPostBySlug } from "../blog/data/data";
 import { computed, onMounted } from "vue";
+import { useI18n } from "../composables/useI18n";
+import "../styles/blog-post.css";
 
+const { tt } = useI18n();
 const route = useRoute();
 const post = computed(() => getPostBySlug(route.params.slug));
 
@@ -30,10 +33,3 @@ onMounted(() => {
   }
 });
 </script>
-
-<style scoped>
-.post { background:#fff; border-radius:12px; padding:20px; border:1px solid #e5e7eb; }
-.content :is(h2,h3) { margin-top:1.2rem; }
-.content img { max-width:100%; border-radius:8px; }
-.back { margin-top:16px; }
-</style>
