@@ -1,14 +1,5 @@
-.muted { 
-  color: #666; 
-  margin-top: -6px; 
-}
-.card { 
-  background: #fff; 
-  border: 1px solid #e5e7eb; 
-  border-radius: 12px; 
-  padding: 14px; 
-  margin: 10px 0; 
-}
-h3 { 
-  margin: 6px 0 2px; 
-}
+/* Blog list grid */
+section > .card{ margin-bottom: var(--space-3); }
+article.card h3 a{ color:#fff; }
+article.card small{ display:block; margin-top:.25rem; }
+article.card p{ color:var(--muted); }

@@ -1,76 +1,44 @@
-.settings {
-  position: absolute;
-  top: 16px;
-  right: 20px;
-}
-details {
-  position: relative;
-}
-summary {
-  cursor: pointer;
-  list-style: none;
-  font-size: 20px;
-  border: 1px solid #e5e7eb;
-  border-radius: 999px;
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  background: #ffffff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: transform .1s ease;
-}
-summary:active { 
-  transform: scale(0.96); 
-}
-summary::-webkit-details-marker { 
-  display: none; 
+/* Anchor for absolute positioning */
+.settings{
+  position: relative;   /* << anchor */
 }
 
-.panel {
-  position: absolute;
-  right: 0;
-  margin-top: 8px;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 12px;
-  min-width: 200px;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+/* Button (summary) bleibt wie gehabt */
+.settings details > summary {
+  border: none;
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
 }
 
-.panel-title {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  color: #6b7280;
-  margin-bottom: 8px;
+/* Panel als Overlay: nimmt keinen Platz im Header ein */
+.settings .panel{
+  position: absolute;          /* << take out of flow */
+  top: calc(100% + 8px);       /* unter dem Button */
+  right: 0;                    /* an rechter Kante ausrichten */
+  z-index: 1000;
+
+  /* vorher: margin-top – ENTFERNEN */
+  background: linear-gradient(180deg, #0f1627, #0e1524);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-2);
+  min-width: 220px;
 }
 
-.segmented {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
+.settings details[open] > summary{
+  outline: 2px solid rgba(126,178,255,.35);
 }
 
-.segmented button {
-  appearance: none;
-  border: 1px solid #e5e7eb;
-  background: #f9fafb;
-  padding: 8px 10px;
-  border-radius: 10px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background .2s ease, border-color .2s ease, transform .02s ease;
+.panel-title{ color: var(--muted); font-weight:700; margin-bottom: .5rem; }
+
+.segmented{
+  display:flex; gap:.5rem; background:#0c1220; padding:.35rem; border-radius: 12px; border:1px solid var(--border);
 }
-.segmented button:hover { 
-  background: #f3f4f6; 
+.segmented button{
+  flex:1; border:none; padding:.5rem .75rem; border-radius:9px; color:var(--muted); font-weight:700;
+  background: transparent;
 }
-.segmented button:active { 
-  transform: scale(0.98); 
-}
-.segmented button.active {
-  background: #111827;
-  color: #fff;
-  border-color: #111827;
+.segmented button.active{
+  color:#fff; background: linear-gradient(180deg, rgba(31,111,235,.20), rgba(31,111,235,.12));
+  border:1px solid rgba(126,178,255,.35);
 }

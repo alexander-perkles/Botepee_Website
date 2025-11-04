@@ -8,6 +8,12 @@
       <li>Fedor Abramov – <a href="mailto:1148@htl.rennweg.at">1148@htl.rennweg.at</a></li>
     </ul>
   </section>
+  <section>
+  <p>
+    {{ tt("contact.p2") }}
+    <a href="tel:+436765113431">+43 676 5113431</a>
+  </p>
+</section>
 </template>
 
 <script setup>

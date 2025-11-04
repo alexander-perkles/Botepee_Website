@@ -1,6 +1,6 @@
 export const messages = {
   de: {
-    "site.title": "Botépée – Der Fechtroboter",
+    "site.title": " – Der Fechtroboter",
     "nav.home": "Startseite",
     "nav.team": "Team",
     "nav.contact": "Kontakt",
@@ -31,6 +31,7 @@ export const messages = {
     // Kontakt
     "contact.h2": "Kontakt",
     "contact.p": "Bei Fragen oder Interesse am Projekt können Sie uns gerne per E-Mail kontaktieren:",
+    "contact.p2":"Wir sind auch telefonisch erreichbar unter:",
 
     // Blog
     "blog.h2": "Blog",
@@ -80,6 +81,7 @@ export const messages = {
     // Kontakt
     "contact.h2": "Contact",
     "contact.p": "If you have questions or are interested in the project, feel free to email us:",
+    "contact.p2": "We are also available via telephone at:",
 
     // Blog
     "blog.h2": "Blog",
