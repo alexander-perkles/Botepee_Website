@@ -14,7 +14,6 @@ export const messages = {
     "home.idea.h2": "Projektidee",
     "home.idea.p":
       "Botépée ist ein innovativer Fechttrainingsroboter, der speziell für realistische Übungsszenarien im Fechtsport entwickelt wird. Der Roboter ist mit einem beweglichen Arm und Bein ausgestattet, trägt echte Fechtausrüstung und kann über eine Fernbedienung gesteuert werden.",
-    "home.why.h2": "Warum Botépée?",
     "home.why.p":
       "Im Fechtsport fehlen dynamische Trainingsgeräte. Bestehende Methoden (z. B. mit Polstern) erlauben keine realistische Bewegung. Botépée simuliert echte Fechtaktionen wie Angriffe, Paraden und Ausfälle.",
     "home.goals.h2": "Ziele des Projekts",
@@ -23,6 +22,8 @@ export const messages = {
     "home.goals.li3": "Beweglicher Arm und Bein mit Servomotoren",
     "home.goals.li4": "Robuste Ausstattung mit echter Fechtausrüstung",
     "home.goals.li5": "Professioneller Webauftritt und Marketing",
+    "home.goals.li6": "Bei ausreichend Unterstützung größere Mengen regelmäßig produzieren",
+    "home.sponsors.h2": "Vielen Dank an unsere Sponsoren",
 
     // Team
     "team.h2.team": "Projektteam",
@@ -32,6 +33,10 @@ export const messages = {
     "contact.h2": "Kontakt",
     "contact.p": "Bei Fragen oder Interesse am Projekt können Sie uns gerne per E-Mail kontaktieren:",
     "contact.p2":"Wir sind auch telefonisch erreichbar unter:",
+    "contact.feedback.h2": "Feedback zum Projekt oder zur Website",
+    "contact.feedback.p": "Falls Sie uns Feedback geben oder einen Fehler melden möchten, können Sie hier das Formular ausfüllen:",
+    "contact.feedback.button": "Feedback",
+    "contact.feedback.hide": "Formular ausblenden",
 
     // Blog
     "blog.h2": "Blog",
@@ -50,7 +55,7 @@ export const messages = {
     "faq.notfound.p": "Der angeforderte Beitrag existiert nicht (Slug falsch oder Datei fehlt).",
   },
   en: {
-    "site.title": "Botépée – The Fencing Robot",
+    "site.title": "– The Fencing Robot",
     "nav.home": "Home",
     "nav.team": "Team",
     "nav.contact": "Contact",
@@ -73,6 +78,8 @@ export const messages = {
     "home.goals.li3": "Movable arm and leg using servos",
     "home.goals.li4": "Robust setup with real fencing equipment",
     "home.goals.li5": "Professional website and marketing",
+    "home.goals.li6": "Enter regular production of larger quantities with sufficient support",
+    "home.sponsors.h2": "Many thanks to our sponsors",
 
     // Team
     "team.h2.team": "Project Team",
@@ -82,7 +89,11 @@ export const messages = {
     "contact.h2": "Contact",
     "contact.p": "If you have questions or are interested in the project, feel free to email us:",
     "contact.p2": "We are also available via telephone at:",
-
+    "contact.feedback.h2": "Feedback about the project or the website",
+    "contact.feedback.p": "If you’d like to give us feedback or report a bug, you can fill out the form here:",
+    "contact.feedback.button": "Give Feedback",
+    "contact.feedback.hide": "Hide form",
+    
     // Blog
     "blog.h2": "Blog",
     "blog.subtitle": "News from the Botépée project.",
